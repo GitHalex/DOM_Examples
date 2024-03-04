@@ -66,12 +66,19 @@ header h1 {
   right: 0;
   width: 100%;
   background-color: var(--second-modal-color);
-  transition: trasform 0.3s ease;
-  transform: translate(0, -100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: trasform 0.3s ease, opacity 0.5s ease;
+  /* De arriba */
+  /* transform: translate(0, -100%); */
+  /* De abajo */
+  /* transform: translate(0, 100%); */
 }
 
 .panel.is-active {
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
+  opacity: 1;
+  visibility: visible;
 }
 
 .panel-btn {
@@ -112,4 +119,21 @@ header h1 {
   font-weight: bold;
   color: var(--second-color);
   background-color: var(--main-modal-color);
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #3c503d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+
+.my-button:active {
+  background-color: #105c13;
 }
