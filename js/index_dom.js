@@ -1,3 +1,4 @@
+import scrollTopButton from "./dom/boton_scroll.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import hamburgerMenu from "./dom/menu_hamburguesa.js";
 import { alarm, digitalClock } from "./dom/reloj.js";
@@ -14,6 +15,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "May 23, 2024 03:23:19",
     "Feliz Cumpleaños amigo y docente digital"
   );
+  scrollTopButton(".scroll-top-btn");
 });
 
 d.addEventListener("keydown", (e) => {

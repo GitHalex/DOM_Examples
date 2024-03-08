@@ -5,23 +5,23 @@ export default function countdown(id, limitDate, finalMessage) {
 
   let countdownTempo = setInterval(() => {
     let now = new Date().getTime();
-    console.log(now);
+    // console.log(now);
     let limitTime = $countdownDate - now;
-    console.log(limitTime);
+    // console.log(limitTime);
     let days = Math.floor(limitTime / (1000 * 60 * 60 * 24));
-    console.log(days);
+    // console.log(days);
     let hours = (
       "0" + Math.floor((limitTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     ).slice(-2);
-    console.log(hours);
+    // console.log(hours);
     let minutes = (
       "0" + Math.floor((limitTime % (1000 * 60 * 60)) / (1000 * 60))
     ).slice(-2);
-    console.log(minutes);
+    // console.log(minutes);
     let seconds = ("0" + Math.floor((limitTime % (1000 * 60)) / 1000)).slice(
       -2
     );
-    console.log(seconds);
+    // console.log(seconds);
 
     $countdown.innerHTML = `<h2>Faltan: ${days} dias - ${hours} horas - ${minutes} minutos - ${seconds} segundos</h2>`;
 
