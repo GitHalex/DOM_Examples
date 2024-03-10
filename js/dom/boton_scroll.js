@@ -12,8 +12,8 @@ export default function scrollTopButton(btn) {
     } else {
       $scrollBtn.classList.add("hidden");
     }
-    console.log(scrollTop);
-    console.log(w.pageYOffset, d.documentElement.scrollTop);
+    // console.log(scrollTop);
+    // console.log(w.pageYOffset, d.documentElement.scrollTop);
   });
 
   d.addEventListener("click", (e) => {

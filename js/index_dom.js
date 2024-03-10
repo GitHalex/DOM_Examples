@@ -3,6 +3,7 @@ import countdown from "./dom/cuenta_regresiva.js";
 import hamburgerMenu from "./dom/menu_hamburguesa.js";
 import { alarm, digitalClock } from "./dom/reloj.js";
 import { moveBall, shortcuts } from "./dom/teclado.js";
+import darkTheme from "./dom/tema_oscuro.js";
 
 const d = document;
 
@@ -16,6 +17,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "Feliz Cumpleaños amigo y docente digital"
   );
   scrollTopButton(".scroll-top-btn");
+  darkTheme(".dark-theme-btn", "dark-mode");
 });
 
 d.addEventListener("keydown", (e) => {
