@@ -17,10 +17,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "Feliz Cumpleaños amigo y docente digital"
   );
   scrollTopButton(".scroll-top-btn");
-  darkTheme(".dark-theme-btn", "dark-mode");
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
+darkTheme(".dark-theme-btn", "dark-mode");
