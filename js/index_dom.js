@@ -1,6 +1,7 @@
 import scrollTopButton from "./dom/boton_scroll.js";
 import countdown from "./dom/cuenta_regresiva.js";
 import hamburgerMenu from "./dom/menu_hamburguesa.js";
+import responsiveMedia from "./dom/objeto_responsive.js";
 import { alarm, digitalClock } from "./dom/reloj.js";
 import { moveBall, shortcuts } from "./dom/teclado.js";
 import darkTheme from "./dom/tema_oscuro.js";
@@ -17,6 +18,18 @@ d.addEventListener("DOMContentLoaded", (e) => {
     "Feliz Cumpleaños amigo y docente digital"
   );
   scrollTopButton(".scroll-top-btn");
+  responsiveMedia(
+    "youtube",
+    "(min-width:1024px)",
+    "Contenido Movil",
+    "Contenido Escritorio"
+  );
+  responsiveMedia(
+    "gmaps",
+    "(min-width:1024px)",
+    "Contenido Movil",
+    "Contenido Escritorio"
+  );
 });
 
 d.addEventListener("keydown", (e) => {
