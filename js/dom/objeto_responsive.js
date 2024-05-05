@@ -1,5 +1,5 @@
-const d = document;
-const w = window;
+const d = document,
+  w = window;
 
 export default function responsiveMedia(id, mq, movileContent, desktopContent) {
   let breakpoint = w.matchMedia(mq);
